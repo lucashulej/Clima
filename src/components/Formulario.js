@@ -61,18 +61,15 @@ const Formulario = ({busqueda,guardarBusqueda,guardarConsultar}) => {
                 </select>
                 <label htmlFor='pais'>Pais:</label>
             </div>
-            <div className='input-field col s12'>
-                <input
-                    type='submit'
-                    value='Buscar Clima'
-                    className='waves-effect waves-light btn-large btn-block yellow accent-4'
-                />
-            </div>
+            <input
+                type='submit'
+                value='Buscar Clima'
+                className='input-field col s12 btn-large btn-block yellow accent-4'
+            />
         </form>
     );
 }
  
-
 Formulario.propTypes = {
     busqueda: PropTypes.object.isRequired,
     guardarBusqueda: PropTypes.func.isRequired,
